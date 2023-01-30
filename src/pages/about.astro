@@ -1,0 +1,197 @@
+---
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<html lang="en">
+  <head>
+    <MainHead
+      title="About | Guido Peñaloza"
+      description="About Guido Peñaloza"
+    />
+    <style>
+      .heroImg {
+        max-height: 24rem;
+        object-fit: cover;
+        overflow: hidden;
+      }
+
+      .heroImg img {
+        width: 100%;
+      }
+
+      .bio {
+        font-size: var(--f-u1);
+        line-height: 2;
+        margin-top: 4em;
+      }
+
+      .wrapper.bio {
+        max-width: 50em;
+      }
+
+      .stack {
+        display: flex;
+        flex-direction: initial;
+      }
+
+      @media (max-width: 800px) {
+        .stack {
+          flex-direction: column;
+        }
+      }
+
+      .stack-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+      }
+
+      a {
+        font-size: 11px;
+      }
+
+      .stack-logo > img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <Nav />
+    <div class="wrapper">
+      <h1>About Guido</h1>
+      <div class="heroImg">
+        <img width="1400" height="300" src="/assets/about.png" />
+      </div>
+      <div class="bio wrapper">
+        <h2>Bio</h2>
+        <p>
+          I’m <b> Guido Peñaloza</b> - A FullStack Software Engineer specialized
+          in ASP.NET Core and Angular with 2 years of work experience. My journey
+          as a software developer started when I was 16 years old focusing on developing
+          desktop applications with WInForms using C#. I have been learning different
+          technologies in this time, but currently I am focused on web development
+          and the development of tools and integrations of VoIP systems using Asterisk
+          (Freeswitch and Kamailio later). In the future I plan to immerse myself
+          in the world of Machine Learning.
+        </p>
+        <h2>My Stack</h2>
+        <div class="stack">
+          <div class="stack-logo">
+            <img src="/assets/stack/dotnet.png" />
+            <a>ASP.NET 6</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/angular.png" />
+            <a>Angular 2+</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/psql.png" />
+            <a>Postgres</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/azure.png" />
+            <a>Azure</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/web.png" />
+            <a>HTML/CSS/JS</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/bash.png" />
+            <a>Bash</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/linux.png" />
+            <a>Linux</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/typescript.png" />
+            <a>Typescript</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/python.png" />
+            <a>Python</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/asterisk.png" />
+            <a>Asterisk</a>
+          </div>
+          <div class="stack-logo">
+            <img src="/assets/stack/fs.png" />
+            <a>Freeswitch</a>
+          </div>
+        </div>
+        <h2>ASP.NET Core Dev</h2>
+        <div>
+          <ul>
+            <li>HTTP/HTTPS protocol</li>
+            <li>Dotnet CLI</li>
+            <li>SOLID</li>
+            <li>MVC</li>
+            <li>REST</li>
+            <li>Razor</li>
+            <li>Middlewares</li>
+            <li>Filters & Attributes</li>
+            <li>Authentication & Authorization</li>
+            <li>Dependecy Injection</li>
+            <li>ORM (EF & Dapper)</li>
+            <li>Postgres</li>
+            <li>SQL Server</li>
+            <li>MongoDB</li>
+            <li>Caching (Redis)</li>
+            <li>Serilog</li>
+            <li>SignalR Core</li>
+            <li>Automapper</li>
+            <li>Kafka</li>
+            <li>Ocelot</li>
+            <li>Docker</li>
+            <li>Testing (xUnit, Mocking)</li>
+            <li>Jenkins</li>
+            <li>Design Patterns (CQRS, Decorator, Strategy, Singelton...)</li>
+            <li>MediatR</li>
+            <li>FluentValidation</li>
+            <li>Polly</li>
+          </ul>
+        </div>
+        <h2>Angular 2+ Dev</h2>
+        <div>
+        <ul>
+          <li>Typescript</li>
+          <li>RxJS & Promises</li>
+          <li>Operators</li>
+          <li>Interpolation</li>
+          <li>Property Binding</li>
+          <li>Binding</li>
+          <li>Components</li>
+          <li>Templates</li>
+          <li>Modules</li>
+          <li>Dependecy Injection</li>
+          <li>Services</li>
+          <li>Routing</li>
+          <li>Directives</li>
+          <li>Pipes</li>
+          <li>Lazy Loading</li>
+          <li>Testing</li>
+        </ul>
+        </div>
+        <h2>My Favorite Books</h2>
+        <div>
+        <ul>
+          <li>Swallow that Frog</li>
+          <li>Las venas abiertas de America Latina</li>
+          <li>Hands On Design Patterns with C#</li>
+          <li>No More Mr. Nice Guy</li>
+          <li>Measure What Matters</li>
+          <li>The Road Ahead</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>
